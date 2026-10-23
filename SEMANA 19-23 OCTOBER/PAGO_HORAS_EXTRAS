@@ -1,0 +1,12 @@
+Algoritmo PAGO_HORAS_EXTRAS
+	DEFINIR hora,extras Como Real
+	Escribir "cuantas horas trabajo: "
+	leer hora
+	extras<- hora
+Si hora > 42 Entonces
+	extras <- (42*8838)+((hora-42)*8838*1.5)
+	Escribir "el trabajo total con extras es: " ,extras
+SiNo 
+	Escribir "pago total: ",hora*8838
+Fin Si
+FinAlgoritmo
